@@ -11,6 +11,7 @@ main {
 .logo {
     display: inline-block;
     height: 30px;
+    mix-blend-mode: multiply;
 }
 
 h1 {
