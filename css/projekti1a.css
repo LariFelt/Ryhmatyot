@@ -1,15 +1,29 @@
+
 form {
-    border:3px solid blue;
-    border-radius:30px;
-    margin:15px;
-    width:400px; 
+    border: 3px solid blue;
+    border-radius: 30px;
+    margin: 15px;
+    width: 400px;
+    background-color: #9E749C;
 }
 h1{
     margin:15px;
-    color:#ff2222;
+    color:#FFF;
     text-align:center
     
 }
-#eka{
-    margin:auto
+p{
+    margin:15px
 }
+#eka {
+    margin: 15px
+}
+#toka {
+    margin:15px
+   
+}
+#nappula {
+    margin:15px
+}
+
+
