@@ -1,13 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     margin: 15px;
+    background-color: #f7f7f7; /* Taustav‰ri */
 }
 
 #otsikko {
     text-align: center;
+    color: #333; /* Tekstin v‰ri */
+    font-size: 24px; /* Tekstin koko */
+    margin-bottom: 20px; /* Lis‰tty marginaali alapuolelle */
 }
-#kuvaus{
-    text-align:center
+
+#kuvaus {
+    text-align: center;
+    color: #555; /* Tekstin v‰ri */
+    font-size: 16px; /* Tekstin koko */
+    margin-bottom: 20px; /* Lis‰tty marginaali alapuolelle */
 }
 
 form {
@@ -17,13 +25,16 @@ form {
     border-radius: 5px;
     max-width: 400px;
     margin: 0 auto;
+    background-color: #fff; /* Taustav‰ri */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Varjo */
 }
 
 label {
-    margin: 15px; /* Lis‰tty 15px marginaali yl‰- ja alapuolelle */
+    margin: 15px;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
+    color: #333; /* Tekstin v‰ri */
 }
 
 input[type="text"],
@@ -36,8 +47,23 @@ textarea {
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px; /* Tekstin koko */
 }
 
+/* Lyhennet‰‰n ik‰kentt‰‰ */
+#ika {
+    width: 50px;
+}
+
+/* Rajoitetaan textarea-kentt‰ koon suhteen */
+#kommentit {
+    width: 90%;
+    max-width: 90%;
+    height: 70px;
+    overflow: auto;
+}
+
+/* Virheviestit */
 .virhe {
     color: red;
     font-size: 12px;
@@ -51,6 +77,7 @@ button {
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 16px; /* Tekstin koko */
 }
 
     button:hover {
@@ -65,6 +92,7 @@ button {
     .ryhma label {
         width: 70px;
         margin: 10px;
+        color: #333; /* Tekstin v‰ri */
     }
 
 .valinta {
@@ -75,18 +103,13 @@ button {
     .valinta label {
         width: 70px;
         margin: 10px;
+        color: #333; /* Tekstin v‰ri */
     }
-#ika {
-    width: 50px;
-}
-#kommentit {
-    width: 90%;
-    max-width: 90%;
-    height: 70px;
-    overflow: auto;
-}
-fieldset{
-    width:auto;
-    margin:10px
-}
 
+fieldset {
+    width: auto;
+    margin: 10px;
+}
+#laheta{
+margin:10px;
+}
