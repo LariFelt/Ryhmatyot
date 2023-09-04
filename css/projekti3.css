@@ -1,0 +1,36 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Russo One', sans-serif;
+    line-height: 1.6em;
+}
+h2 {
+    font-family: 'Zhi Mang Xing', cursive;
+
+}
+#lahteet{
+    font-size:8px
+}
+.tekstit {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.parakuva1, .parakuva2 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.parakuva1 {
+    background-image: url("https://live.staticflickr.com/7518/15261716233_f7b8955ae8_b.jpg");
+    min-height: 800px;
+}
+.parakuva2 {
+    background-image: url("https://www.trustedreviews.com/wp-content/uploads/sites/54/2023/06/Diablo-IV-1.png");
+    min-height: 800px;
+}
