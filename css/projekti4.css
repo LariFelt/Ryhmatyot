@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    box-shadow: 15px 8px 8px black, -.12em 0 .8em blue;
+    margin-bottom: 50px;
+    background-color: lightcoral;
+    width: 800px;
+}
+
+
+body {
+    background-color: darkolivegreen;
+    font-family: 'MS Reference Sans Serif';
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 1.3em;
+}
+
+input[type='text'], input[type='date'], input[type='email'], input[type='checkbox']{
+    height: 25px;
+    width: 220px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+form label {
+    display: inline-block;
+    width: 400px;
+    font-weight: bold;
+}
+
+form input[type='number'],
+form input[type='text'],
+form input[type='email'] {
+    height: 20px;
+    width: 220px;
+    border: 1px solid #000f;
+    border-radius: 3px;
+}
