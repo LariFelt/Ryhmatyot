@@ -1,21 +1,21 @@
 body {
     font-family: "Arial", sans-serif;
     margin: 15px;
-    background-color: #f7f7f7; /* Taustav‰ri */
+    background-color: #f7f7f7;
 }
 
 #otsikko {
     text-align: center;
-    color: #333; /* Tekstin v‰ri */
-    font-size: 24px; /* Tekstin koko */
-    margin-bottom: 20px; /* Lis‰tty marginaali alapuolelle */
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 20px; 
 }
 
 #kuvaus {
     text-align: center;
-    color: #555; /* Tekstin v‰ri */
-    font-size: 16px; /* Tekstin koko */
-    margin-bottom: 20px; /* Lis‰tty marginaali alapuolelle */
+    color: #555; 
+    font-size: 16px; 
+    margin-bottom: 20px;
 }
 
 form {
@@ -25,8 +25,8 @@ form {
     border-radius: 5px;
     max-width: 400px;
     margin: 0 auto;
-    background-color: #fff; /* Taustav‰ri */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Varjo */
+    background-color: #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
 label {
@@ -34,8 +34,7 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    color: #333; /* Tekstin v‰ri */
-}
+    color: #333; 
 
 input[type="text"],
 input[type="email"],
@@ -47,15 +46,15 @@ textarea {
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px; /* Tekstin koko */
+    font-size: 16px;
 }
 
-/* Lyhennet‰‰n ik‰kentt‰‰ */
+
 #ika {
     width: 50px;
 }
 
-/* Rajoitetaan textarea-kentt‰ koon suhteen */
+
 #kommentit {
     width: 90%;
     max-width: 90%;
@@ -63,7 +62,7 @@ textarea {
     overflow: auto;
 }
 
-/* Virheviestit */
+
 .virhe {
     color: red;
     font-size: 12px;
@@ -92,7 +91,7 @@ button {
     .ryhma label {
         width: 70px;
         margin: 10px;
-        color: #333; /* Tekstin v‰ri */
+        color: #333; 
     }
 
 .valinta {
@@ -103,7 +102,7 @@ button {
     .valinta label {
         width: 70px;
         margin: 10px;
-        color: #333; /* Tekstin v‰ri */
+        color: #333;
     }
 
 fieldset {
