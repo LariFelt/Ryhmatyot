@@ -30,8 +30,8 @@ h1 {
 
     #number-buttons button {
         font-family: "Arial", sans-serif;
-        font-size: 16px; /* Pienensin numeroita ja laatikoita */
-        padding: 6px 12px; /* Pienensin laatikoita */
+        font-size: 16px;
+        padding: 6px 12px;
         margin: 5px;
         background-color: #0074d9;
         color: #fff;
@@ -46,7 +46,7 @@ h1 {
 
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px; /* Pienensin tekstiä */
+    font-size: 16px; 
     margin: 10px;
 }
 
