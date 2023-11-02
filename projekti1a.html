@@ -4,49 +4,51 @@
     <meta charset="utf-8">
     <title>Lomake</title>
     <link href="css/projekti1a.css" type="text/css" rel="stylesheet" />
+    <script src="js/java1a.js"></script>
 </head>
 <body>
-        <form>
-            <h1>Tietojenkeruulomake</h1>
-            <table id="eka">
-                <tr>
-                    <td>Etunimi: </td>
-                    <td class="oikea"><input type="text" name="etunimi" value=""></td>
-                </tr>
-                <tr>
-                    <td>Sukunimi:</td>
-                    <td class="oikea"><input type="text" name="sukunimi" value=""></td>
-                </tr>
-                <tr>
-                    <td>Sähköpostiosoite:</td>
-                    <td class="oikea"><input type="email" name="email" value=""></td>
-                </tr>
-            </table>
-            <p>Valitse toinen: </p>
-            <p>
-                <input type="radio" name="Liha" value="lihaa" checked />
-                Olen lihansyöjä.<br />
-                <input type="radio" name="Liha" value="eilihaa" />
-                Olen kasvissyöjä.
-            </p>
-            <table id="toka">
-                <tr>
-                    <td colspan="2">Ruoka-aine allergiat:</td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="oikea"><textarea name="allergiat" rows="6" cols="40"></textarea></td>
-                </tr>
-            </table>
-            <p>
-                Mitä kaikkea syöt?
-            </p>
-            <p>
-                <input type="checkbox" name="box" value="Pizza">Pizza<br />
-                <input type="checkbox" name="box" value="Burgeri">Burgeri<br />
-                <input type="checkbox" name="box" value="Pihvi">Kunnon stake<br />
-                <input type="checkbox" name="box" value="Salaatti">Salaatti<br />
-            </p>
-            <input id="nappula" type="submit" value="Lähetä">
-        </form>
+    <form onsubmit="tarkistus(); return false;">
+        <h1>Tietojenkeruulomake</h1>
+        <table id="eka">
+            <tr>
+                <td>Etunimi: </td>
+                <td class="oikea"><input type="text" name="etunimi" id="etunimi" value=""></td>
+            </tr>
+            <tr>
+                <td>Sukunimi:</td>
+                <td class="oikea"><input type="text" name="sukunimi" id="sukunimi" value=""></td>
+            </tr>
+            <tr>
+                <td>Sähköpostiosoite:</td>
+                <td class="oikea"><input type="email" name="email" id="email" value=""></td>
+            </tr>
+        </table>
+        <p>Valitse toinen: </p>
+        <p>
+            <input type="radio" name="Liha" id="lihaa" value="lihaa" checked />
+            Olen lihansyöjä.<br />
+            <input type="radio" name="Liha" id="eilihaa" value="eilihaa" />
+            Olen kasvissyöjä.
+        </p>
+        <table id="toka">
+            <tr>
+                <td colspan="2">Ruoka-aine allergiat:</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="oikea"><textarea name="allergiat" id="allergiat" rows="6" cols="40"></textarea></td>
+            </tr>
+        </table>
+        <p>
+            Mitä syöt?
+        </p>
+        <p>
+            <input type="checkbox" name="box" id="Pizza" value="Pizza">Pizza<br />
+            <input type="checkbox" name="box" id="Burgeri" value="Burgeri">Burgeri<br />
+            <input type="checkbox" name="box" id="Pihvi" value="Pihvi">Kunnon stake<br />
+            <input type="checkbox" name="box" id="Salaatti" value="Salaatti">Salaatti<br />
+        </p>
+        <input id="nappula" type="submit" value="Lähetä">
+    </form>
+
 </body>
 </html>
