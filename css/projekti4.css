@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -113,3 +114,120 @@ button {
     }
 }
 
+=======
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 20px;
+    box-shadow: 15px 8px 8px black, -.12em 0 .8em blue;
+    background-color: lightcoral;
+    width: 800px;
+}
+
+body {
+    background-color: darkolivegreen;
+    font-family: 'MS Reference Sans Serif';
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px
+}
+
+p {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 1.3em;
+}
+
+input[type='text'], input[type='date'], input[type='email'] {
+    height: 25px;
+    width: 220px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+input[type='checkbox'] {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+form label {
+    display: inline-block;
+    width: 400px;
+    font-weight: bold;
+}
+
+form input[type='number'],
+form input[type='text'],
+form input[type='email'] {
+    height: 20px;
+    width: 220px;
+    border: 1px solid #000f;
+    border-radius: 3px;
+}
+
+button {
+    margin: 20px;
+    transition-duration: 0.4s;
+}
+
+    button:hover {
+        background-color: darkolivegreen;
+        color: white;
+        cursor: pointer;
+    }
+
+.boxit {
+    vertical-align: top;
+}
+
+/* Media query näytön leveydelle pienempi tai yhtä suuri kuin 768px */
+@media (max-width: 768px) {
+    main {
+        margin:20px;
+        width:93%;
+    }
+
+    input[type='checkbox'] {
+        width: 100%;
+    }
+    form {
+        width:100%;
+        text-align:center;
+    }
+
+    form label {
+        width: 100%;
+        text-align: center;
+    }
+
+    form input[type='number'],
+    form input[type='text'],
+    form input[type='email'],
+    form input[type='date'] {
+        width: 60%;
+        margin: 0 auto;
+    }
+    textarea{
+        max-width:60%;
+        min-width:15%;
+        min-height:40px;
+        max-height:150px
+    }
+}
+
+>>>>>>> a1d12c1e71bfb07e6e79b3e7d95dc6e5dbc0d645
