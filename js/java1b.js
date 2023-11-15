@@ -1,29 +1,43 @@
-﻿document.getElementById("kyselylomake").addEventListener("submit", function (event) {
-    var nimiKentta = document.getElementById("nimi");
-    var emailKentta = document.getElementById("email");
-    var ikaKentta = document.getElementById("ika");
-    var nimiVirhe = document.getElementById("nimiVirhe");
-    var emailVirhe = document.getElementById("emailVirhe");
-    var ikaVirhe = document.getElementById("ikaVirhe");
+﻿    document.addEventListener('DOMContentLoaded', function () {
+    var lomake = document.getElementById('kyselylomake');
+    var nimiKentta = document.getElementById('nimi');
+    var emailKentta = document.getElementById('email');
+    var ikaKentta = document.getElementById('ika');
 
-    if (nimiKentta.validity.valueMissing || nimiKentta.validity.tooShort) {
-        nimiVirhe.style.display = "block";
-        event.preventDefault();
-    } else {
-        nimiVirhe.style.display = "none";
-    }
 
-    if (emailKentta.validity.valueMissing || emailKentta.validity.typeMismatch) {
-        emailVirhe.style.display = "block";
-        event.preventDefault();
-    } else {
-        emailVirhe.style.display = "none";
-    }
+    lomake.addEventListener('submit', function (event) {
+            if (!onKelvollinenNimi(nimiKentta.value) ||
+    !onKelvollinenEmail(emailKentta.value) ||
+    !onKelvollinenIka(ikaKentta.value) ||
+    !onVahintaanYksiValittu('ryhma') ||
+    !onVahintaanYksiValittu('valinta')) {
+        alert('Täytä kaikki vaaditut kentät.');
+    event.preventDefault();
+            }
+        });
 
-    if (ikaKentta.validity.valueMissing || ikaKentta.validity.rangeUnderflow || ikaKentta.validity.rangeOverflow || isNaN(ikaKentta.value)) {
-        ikaVirhe.style.display = "block";
-        event.preventDefault();
-    } else {
-        ikaVirhe.style.display = "none";
-    }
-});
+    function onKelvollinenNimi(nimi) {
+            return nimi.length >= 3;
+        }
+
+    function onKelvollinenEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+        }
+
+    function onKelvollinenIka(ika) {
+            return !isNaN(ika);
+        }
+
+    function onVahintaanYksiValittu(nimi) {
+            var valinnat = document.querySelectorAll('input[name="' + nimi + '"]');
+    for (var i = 0; i < valinnat.length; i++) {
+                if (valinnat[i].type === 'radio' && valinnat[i].checked) {
+                    return true;
+                } else if (valinnat[i].type === 'checkbox' && valinnat[i].checked) {
+                    return true;
+                }
+            }
+    return false;
+        }
+    });

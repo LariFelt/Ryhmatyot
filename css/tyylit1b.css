@@ -34,8 +34,8 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    color: #333; 
-
+    color: #333;
+}
 input[type="text"],
 input[type="email"],
 input[type="number"],
