@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yksinkertainen Javascript tietovisa</title>
+    <link rel="stylesheet" href="css/tyyli.css" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="sisalto">
+        <header>
+            <h1>Yksinkertainen JavaScript tietovisa</h1>
+            <p>Testaa tietosi <strong>JavaScriptin perusteista</strong></p>
+        </header>
+
+        <section>
+            <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
+                <div id="tulokset"></div>
+
+                <h3>1. Mihin HTML elementtiin sijoitamme JavaScript koodin?</h3>
+                <input type="radio" name="k1" value="a" id="k1a" />a. &lt;js&gt;<br />
+                <input type="radio" name="k1" value="b" id="k1b" />b. &lt;script&gt;<br />
+                <input type="radio" name="k1" value="c" id="k1c" />c. &lt;body&gt;<br />
+                <input type="radio" name="k1" value="d" id="k1d" />d. &lt;link&gt;<br />
+
+                <h3>2. Mit‰ HTML attribuuttia k‰ytet‰‰n viittaamaan ulkoiseen JavaScript tiedostoon?</h3>
+                <input type="radio" name="k2" value="a" id="k2a" />a. src<br />
+                <input type="radio" name="k2" value="b" id="k2b" />b. link<br />
+                <input type="radio" name="k2" value="c" id="k2c" />c. rel<br />
+                <input type="radio" name="k2" value="d" id="k2d" />d. href<br />
+
+                <h3>3. Kuinka kirjoitat "Moikka" alert-viestin‰?</h3>
+                <input type="radio" name="k3" value="a" id="k3a" />a. msg("Moikka");<br />
+                <input type="radio" name="k3" value="b" id="k3b" />b. alertBox("Moikka");<br />
+                <input type="radio" name="k3" value="c" id="k3c" />c. document.write("Moikka");<br />
+                <input type="radio" name="k3" value="d" id="k3d" />d. alert("Moikka");<br />
+
+                <h3>4. JavaScript on suoraan "Java" ohjelmointikielen sukulainen</h3>
+                <input type="radio" name="k4" value="a" id="k4a" />a. Kyll‰<br />
+                <input type="radio" name="k4" value="b" id="k4b" />b. Ei<br />
+
+                <h3>5. JavaScript muuttuja pit‰‰ alkaa tietyll‰ merkill‰</h3>
+                <input type="radio" name="k5" value="a" id="k5a" />a. @<br />
+                <input type="radio" name="k5" value="b" id="k5b" />b. $<br />
+                <input type="radio" name="k5" value="c" id="k5c" />c. #<br />
+                <input type="radio" name="k5" value="d" id="k5d" />d.Ei tarvitse tietty‰ merkki‰<br />
+
+                <br /><br />
+                <input type="submit" value="L‰het‰ vastaukset" />
+            </form>
+        </section>
+        <footer>
+            <p>Copyright &copy; Lari Felt 2023, kaikki oikeudet pid‰tet‰‰n</p>
+        </footer>
+    </div>
+</body>
+</html>
