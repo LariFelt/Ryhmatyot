@@ -1,0 +1,73 @@
+/* M‰‰ritell‰‰n yleiset asetukset koko sivulle */
+body {
+    height: 100%; /* Sivun korkeus on 100% n‰yttˆruudusta */
+    margin: 0; /* Poistetaan ulkoinen reuna sivun ymp‰rilt‰ */
+    font-family: 'Russo One', sans-serif; /* K‰ytet‰‰n 'Russo One' -fonttia ja varmistetaan, ett‰ jos se ei ole saatavilla, k‰ytet‰‰n sans-serif-fonttia */
+    line-height: 1.6em; /* Riviv‰lin m‰‰ritys */
+    font-weight: 800; /* Fontin paksuus */
+    color: #A0F000; /* M‰‰ritell‰‰n tekstin v‰ri */
+}
+
+/* M‰‰ritell‰‰n otsikkojen tyyli */
+    h1 {
+    font-size: 46px; /* H1-otsikoiden fonttikoko */
+}
+
+h2 {
+    font-size: 22px;
+    font-family: 'Zhi Mang Xing', cursive; /* K‰ytet‰‰n 'Zhi Mang Xing' -fonttia ja varmistetaan, ett‰ jos se ei ole saatavilla, k‰ytet‰‰n k‰sinkirjoitusfonttia */
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* M‰‰ritell‰‰n luokan "lahteet" tyyli */
+.lahteet {
+    font-size: 8px; /* Luokan "lahteet" fonttikoko */
+}
+
+/* M‰‰ritell‰‰n luokan "tekstit" tyyli */
+.tekstit {
+    position: absolute; /* Asetetaan sijainti absoluuttiseksi */
+    top: 50%; /* Asetetaan elementin yl‰reuna keskelle n‰yttˆruutua */
+    width: 100%; /* Elementin leveys on 100% */
+    text-align: center; /* Teksti keskitet‰‰n vaakasuunnassa */
+}
+
+/* M‰‰ritell‰‰n taustakuvien tyyli */
+.parakuva1, .parakuva2, .parakuva3, .parakuva4 {
+    position: relative; /* Asetetaan sijainti suhteelliseksi, jotta elementti voi sijaita muiden sis‰ll‰ */
+    opacity: 0.80; /* Asetetaan elementin l‰pin‰kyvyys (80%) */
+    background-position: center; /* Taustakuvan sijainti keskitet‰‰n */
+    background-size: cover; /* Taustakuva peitt‰‰ elementin koko pinta-alan */
+    background-repeat: no-repeat; /* Taustakuva ei toistu */
+    background-attachment: fixed; /* Taustakuva kiinnitet‰‰n n‰yttˆruutuun */
+}
+
+/* Asetetaan taustakuva ja minimikorkeus luokalle "parakuva1" */
+.parakuva1 {
+    background-image: url("https://i.ytimg.com/vi/W7zM1St9kSM/maxresdefault.jpg");
+    min-height: 800px; /* Asetetaan minimikorkeus 800 pikseli‰ */
+}
+
+.parakuva2 {
+    background-image: url("https://live.staticflickr.com/7518/15261716233_f7b8955ae8_b.jpg");
+    min-height: 800px;
+}
+
+.parakuva3 {
+    background-image: url("https://www.trustedreviews.com/wp-content/uploads/sites/54/2023/06/Diablo-IV-1.png");
+    min-height: 800px;
+}
+
+.parakuva4 {
+    background-image: url("https://c.pxhere.com/photos/5d/97/beer_glass_table_sky_mountains_ski_winter_snow-853191.jpg!d");
+    min-height: 800px; 
+}
+
+/* M‰‰ritell‰‰n luokan "section" tyyli */
+.section {
+    text-align: center; /* Teksti keskitet‰‰n vaakasuunnassa */
+    padding: 50px 80px; /* Sis‰inen tyhj‰ tila elementin ymp‰rill‰ (50px ylh‰‰ll‰ ja alhaalla, 80px vasemmalla ja oikealla) */
+}
