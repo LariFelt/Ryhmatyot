@@ -1,0 +1,13 @@
+﻿figure {
+    float: left;
+    margin: 0px 5px;
+}
+figcaption{
+    text-align: center;
+}
+h3{
+    font-size: 36px;
+}
+p{
+    font-size:18px;
+}
