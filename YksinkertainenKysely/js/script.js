@@ -1,3 +1,4 @@
+
 function lahetaVastaukset() {
     var yhteensa = 5;
     var pisteet = 0;
