@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muistipeli - Peli</title>
+    <link rel="stylesheet" href="css/tyylit.css">
+</head>
+<body>
+    <div id="navigointi">
+        <label for="pelityyppi">Valitse pelityyppi:</label>
+        <select id="pelityyppi">
+            <option value="4">4x4</option>
+            <option value="6">4x6</option>
+            <option value="8">6x6</option>
+        </select>
+        <button onclick="aloitaPeli()">Aloita Peli</button>
+    </div>
+    <div id="pelilauta-container">
+        <div id="peli-lauta" style="display:none;"></div>
+    </div>
+
+    <p id="pisteet">Löydetyt parit: 0<br>Käännetyt kortit: 0</p>
+    <p id="aika">Aika: 0 s</p>
+
+    <script src="js/muisti.js"></script>
+</body>
+</html>
