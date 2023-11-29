@@ -118,7 +118,7 @@ function tarkistaArvaus(sekoitetutKortit) {
         if (loydetytParit === sekoitetutKortit.length / 2) {
             // Peli päättyi
             clearInterval(ajastin);
-            alert("Onneksi olkoon! Peli päättyi.\nPisteet löydetyt parit: " + loydetytParit + "\nPisteet kaikki kortit: " + kaannetytKortit + "\nAika: " + aika + " s");
+            alert("Onneksi olkoon! Peli päättyi.\n Löydetyt parit: " + loydetytParit + "\nKäännetyt kortit: " + kaannetytKortit + "\nAika: " + aika + " s");
         }
     } else {
         // Käännä kortit takaisin
